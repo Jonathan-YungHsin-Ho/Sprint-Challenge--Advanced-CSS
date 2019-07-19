@@ -58,7 +58,14 @@
       }
 
       .btn {
-        
+        .button(@wild-sand; @btn-bg-color; 1.9rem; 5px);
+        padding: 0.8rem 0;
+        width: 32%;
+      
+        &:hover {
+          .button(@btn-bg-color; @wild-sand; 1.9rem; 5px); 
+          border: 2px solid @btn-bg-color; 
+        }
       }
     }
 

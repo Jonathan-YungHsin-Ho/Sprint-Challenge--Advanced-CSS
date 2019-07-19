@@ -5,9 +5,12 @@
   align-items: @align;
 }
 
-.button(@txt-color; @bg-color; @radius) {
+.button(@txt-color; @bg-color; @txt-size; @radius) {
   color: @txt-color;
   background-color: @bg-color;
-  border: none;
+  font-size: @txt-size;
+  text-align: center;
+  border: 2px solid @bg-color;
   border-radius: @radius;
+  cursor: pointer;
 }
