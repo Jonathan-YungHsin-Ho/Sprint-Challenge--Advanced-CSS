@@ -1,1 +1,13 @@
 // Mixins Here
+.flex(@justify; @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.button(@txt-color; @bg-color; @radius) {
+  color: @txt-color;
+  background-color: @bg-color;
+  border: none;
+  border-radius: @radius;
+}
