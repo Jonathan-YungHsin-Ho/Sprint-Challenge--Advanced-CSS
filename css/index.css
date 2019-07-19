@@ -172,6 +172,28 @@ p {
   align-items: center;
   flex-direction: column;
 }
+.nav .rocket {
+  position: absolute;
+  background-image: url("../img/rocket.png");
+  background-size: auto 100%;
+  width: 51px;
+  height: 51px;
+  order: -1;
+  animation-name: slidein;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  from {
+    left: -100px;
+    top: 10px;
+  }
+  to {
+    left: calc(100% + 100px);
+    top: 10px;
+  }
+}
 .nav h1 {
   font-size: 4rem;
   color: #23293B;
@@ -187,9 +209,11 @@ p {
   text-decoration: none;
   font-size: 1.6rem;
   color: #23293B;
+  transition: transform 0.3s ease-in-out;
 }
 .nav nav a:hover {
   font-weight: bold;
+  transform: translateY(-4px);
 }
 footer {
   color: #22283B;
