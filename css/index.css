@@ -160,6 +160,37 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-bottom: 1px solid #F1F1F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav h1 {
+  font-size: 4rem;
+  color: #23293B;
+}
+.nav nav {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.nav nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #23293B;
+}
+.nav nav a:hover {
+  font-weight: bold;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +200,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro img {
   border-radius: 5px;

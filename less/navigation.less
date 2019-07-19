@@ -1,1 +1,34 @@
 // Navigation code here
+.nav {
+  position: fixed;
+  top: 0;
+  height: @nav-height;
+  width: 100%;
+
+  background-color: rgba(246, 246, 246, 0.9);
+//   opacity: 0.9;
+  border-bottom: 1px solid @nav-border;
+  .flex(center, center);
+  flex-direction: column;
+
+  h1 {
+    font-size: 4rem;
+    color: @nav-font;
+  }
+
+  nav {
+    width: 400px;
+    .flex(space-around; center);
+    margin-top: 15px;
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: @nav-font;
+
+      &:hover {
+          font-weight: bold;
+      }
+    }
+  }
+}
